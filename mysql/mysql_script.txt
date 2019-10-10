@@ -1,0 +1,36 @@
+use mydb;
+
+CREATE TABLE temp_humidity_data
+(
+  id		INT unsigned NOT NULL AUTO_INCREMENT,	# Unique identity for the record
+  datetime 	DATETIME DEFAULT CURRENT_TIMESTAMP,	# Date and time of measurement
+  temperature	DECIMAL(6,2) NOT NULL,			# Temperature
+  humidity	DECIMAL(5,2) NOT NULL,			# Humidity
+  PRIMARY KEY (id)
+);
+
+
+DROP TABLE temp_humidity_data;
+
+CREATE TABLE temp_humidity_data
+(
+  id		INT unsigned NOT NULL AUTO_INCREMENT,
+  datetime 	DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  temperature	DECIMAL(6,2) NOT NULL,
+  humidity	DECIMAL(5,2) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+
+INSERT INTO temp_humidity_data (temperature, humidity) 
+  VALUES (20.32, 14.22);
+
+INSERT INTO temp_humidity_data (temperature, humidity) 
+  VALUES (21.03, 15.54);
+
+INSERT INTO temp_humidity_data (temperature, humidity) 
+  VALUES (15.00, 40.00);
+
+
+
+SELECT * FROM temp_humidity_data;
