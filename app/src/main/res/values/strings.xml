@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Record Temperature</string>
+    <string name="celsius">&#176;C</string>
+    <string name="btnSave">Save</string>
+    <string name="btnDatabase">Database</string>
+    <string name="btnExit">Exit</string>
+    <string name="txtTemp">Temperature</string>
+    <string name="txtDate">Date</string>
+    <string name="txtTemperature">Ambient Temperature</string>
+    <string name="lblabsolute_humidity">Absolute Humidity</string>
+    <string name="txtHumidity">Humidity</string>
+</resources>
